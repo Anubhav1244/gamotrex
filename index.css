@@ -1,0 +1,99 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper
+{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("gradient-bg.jpg");
+    background-size: cover;
+    background-position: centers;
+   display: grid;
+   place-items: center; 
+    
+
+}
+.playerinfo
+{
+    position:absolute;
+    top: 30px;
+    width: 150px;
+    height: 35px;
+    border: 1px solid #ffffff20;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff20;
+    padding: 5px;
+    color: white;
+    font-weight: 500;
+
+    
+}
+.gridbox
+{
+    width: 90%;
+    max-width: 15rem;
+    position: absolute;
+    border-radius: 10px;
+    background-color: #ffffff20;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    aspect-ratio: 1/1;
+    cursor: pointer;
+
+    padding: 10px;
+}
+.box{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    font-size: 3rem;
+    color: white;
+
+}
+.box1, .box2, .box4, .box5
+{
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+.box3, .box6
+{
+    border-bottom: 2px solid white;
+}
+.box7, .box8
+{
+    border-right: 2px solid white;
+}
+button{
+    all: unset;
+
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    background-color: #ffffff20;
+    border-radius: 10px;
+    padding:5px 5px;
+
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+button.active
+{
+    display: flex;
+   
+}
+.win
+{
+    background-color: aquamarine;
+}
